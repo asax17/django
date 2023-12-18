@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content%}
+
+<h1>{{room.name}}</h1>
+
+<div>
+    <!-- method: send data to action: url-->
+    <form method="POST" action="">
+        {% csrf_token %}
+        <!-- send token with request for security -->
+
+    </form>
+</div>
+
+{% endblock content %}
