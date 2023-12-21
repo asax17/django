@@ -12,3 +12,7 @@ def room(request, pk):
     room = Room.objects.get(id=pk)
     context = {'room': room} # room num return when go to url
     return render(request, 'base/room.html', context)
+
+def create_room(request):
+    context = {}
+    return render(request, 'base/room_form.html', context)
